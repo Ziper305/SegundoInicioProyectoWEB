@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Ing. Valeria Morales</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos CSS Propios (Separados) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación Unificada -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-code-slash text-primary me-2 fs-4"></i>
+                <span>Valeria Morales <small class="text-muted fs-6 d-none d-sm-inline">| Portfolio</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="perfil.html">Perfil Profesional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="experiencia.html">Experiencia Laboral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="formacion.html">Formación Académica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="referencias.html">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <div class="position-relative d-inline-block">
+                    <img id="foto-perfil-img" src="img/perfil1.svg" alt="Fotografía Profesional Principal" class="img-fluid rounded-4 shadow-sm" style="max-width: 280px; transition: all 0.3s ease;">
+                    <span id="badge-atributo-info" class="badge bg-dark mt-2 d-block">Atributo src actual: img/perfil1.svg</span>
+                </div>
+                <div class="mt-3">
+                    <button id="btn-alternar-foto" class="btn btn-outline-primary btn-sm">
+                        <i class="bi bi-arrow-repeat me-1"></i> Alternar Foto (Modificar Atributo src)
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="p-4 p-md-5 custom-card">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill">Ingeniería &amp; Desarrollo Web</span>
+                            <h1 class="display-6 fw-bold mt-2 mb-1">Valeria Sofía Morales Vargas</h1>
+                            <p class="lead text-secondary mb-0">Ingeniera de Sistemas &amp; Arquitecta de Software Full Stack</p>
+                        </div>
+                        <span id="badge-estado-laboral" class="badge bg-success fs-6 py-2 px-3">Disponible para Contratación</span>
+                    </div>
+
+                    <p class="text-muted">
+                        Profesional con más de 6 años liderando proyectos de desarrollo web moderno, infraestructura cloud y sistemas empresariales distribuidos. Especialista en la creación de aplicaciones ágiles, seguras y de alto rendimiento.
+                    </p>
+
+                    <!-- Zona interactiva para Cambiar Contenido -->
+                    <div class="dom-demo-box">
+                        <span class="badge-dom">Punto 1 DOM: Cambiar Contenido</span>
+                        <h6 class="fw-bold text-primary mb-2"><i class="bi bi-pencil-square me-1"></i> Demostración de textContent e innerHTML</h6>
+                        <p id="info-actualizacion" class="small mb-3 text-secondary">
+                            Haga clic en el botón inferior para alternar dinámicamente el estado laboral y el mensaje en tiempo real usando JavaScript.
+                        </p>
+                        <button id="btn-cambiar-estado" class="btn btn-primary btn-sm">
+                            <i class="bi bi-toggle-on me-1"></i> Alternar Estado Laboral (textContent / innerHTML)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Datos Personales y Contacto Directo -->
+        <div class="row g-4">
+            <div class="col-md-5">
+                <div class="card h-100 custom-card p-4">
+                    <h4 class="card-title text-dark fw-bold mb-4 border-bottom pb-2">
+                        <i class="bi bi-person-lines-fill text-primary me-2"></i> Información de Contacto
+                    </h4>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill text-danger fs-5 me-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Ubicación</small>
+                                <span class="fw-medium">Santa Cruz de la Sierra, Bolivia</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-envelope-at-fill text-primary fs-5 me-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Correo Electrónico</small>
+                                <span class="fw-medium">valeria.morales.dev@example.com</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-telephone-fill text-success fs-5 me-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Teléfono / WhatsApp</small>
+                                <span class="fw-medium">+591 71234567</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="bi bi-linkedin text-info fs-5 me-3"></i>
+                            <div>
+                                <small class="text-muted d-block">Red Profesional</small>
+                                <a href="https://linkedin.com" target="_blank" class="fw-medium text-decoration-none">linkedin.com/in/valeriamorales</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="card h-100 custom-card p-4">
+                    <h4 class="card-title text-dark fw-bold mb-3 border-bottom pb-2">
+                        <i class="bi bi-chat-dots-fill text-primary me-2"></i> Formulario de Mensaje Rápido
+                    </h4>
+                    <form onsubmit="event.preventDefault(); alert('Mensaje enviado exitosamente a Valeria Morales.');">
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6 form-floating">
+                                <input type="text" class="form-control" id="nombreContacto" placeholder="Nombre completo" required>
+                                <label for="nombreContacto">Nombre completo</label>
+                            </div>
+                            <div class="col-md-6 form-floating">
+                                <input type="email" class="form-control" id="emailContacto" placeholder="correo@ejemplo.com" required>
+                                <label for="emailContacto">Correo electrónico</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Escriba su consulta" id="mensajeContacto" style="height: 100px" required></textarea>
+                            <label for="mensajeContacto">Mensaje o propuesta de proyecto</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-send-fill me-1"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página Unificado -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Ing. Valeria Sofía Morales Vargas - Proyecto Académico de Investigación DOM</p>
+            <small class="text-muted">Desarrollado con HTML5 semántico, Bootstrap 5, CSS3 personalizado y JavaScript puro (Vanilla DOM).</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (con Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Código JS Propio (Separado para manipulación del DOM) -->
+    <script src="js/main.js"></script>
+</body>
+</html>

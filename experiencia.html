@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Ing. Valeria Morales</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos CSS Propios (Separados) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación Unificada -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-code-slash text-primary me-2 fs-4"></i>
+                <span>Valeria Morales <small class="text-muted fs-6 d-none d-sm-inline">| Portfolio</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="perfil.html">Perfil Profesional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="experiencia.html">Experiencia Laboral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="formacion.html">Formación Académica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="referencias.html">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="fw-bold"><i class="bi bi-briefcase-fill text-primary me-2"></i> Experiencia Laboral</h2>
+                <p class="text-secondary">Historial de puestos, responsabilidades asumidas e impacto generado en organizaciones de tecnología.</p>
+            </div>
+        </div>
+
+        <!-- Demostración DOM: 3 Formas de Eventos -->
+        <div class="dom-demo-box mb-4">
+            <span class="badge-dom">Punto 5 DOM: Escuchar Eventos (3 Formas)</span>
+            <h5 class="fw-bold text-primary mb-2"><i class="bi bi-lightning-charge-fill me-1"></i> Demostración Práctica de Eventos en JavaScript</h5>
+            <p class="small text-secondary mb-3">
+                Interactúe con los botones para ver cómo se capturan los eventos mediante las 3 técnicas de JavaScript:
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+                <!-- FORMA 1: Atributo HTML Inline -->
+                <button onclick="mostrarDetalleInline('Lead Software Architect')" class="btn btn-warning btn-sm">
+                    <i class="bi bi-tag-fill me-1"></i> Forma 1: Atributo HTML (onclick="...")
+                </button>
+                <!-- FORMA 2: Propiedad del objeto DOM -->
+                <button id="btn-evento-propiedad" class="btn btn-info btn-sm text-white">
+                    <i class="bi bi-gear-fill me-1"></i> Forma 2: Propiedad DOM (elemento.onclick = ...)
+                </button>
+                <!-- FORMA 3: Método addEventListener -->
+                <button id="btn-evento-listener" class="btn btn-success btn-sm">
+                    <i class="bi bi-broadcast me-1"></i> Forma 3: Método (addEventListener)
+                </button>
+            </div>
+            <div id="caja-respuesta-evento" class="alert alert-secondary mt-3 mb-0 py-2">
+                <em>Haga clic en cualquiera de los botones para ver la ejecución del evento en tiempo real.</em>
+            </div>
+        </div>
+
+        <!-- Tabla Responsiva de Bootstrap -->
+        <div class="custom-card p-4 mb-4">
+            <h4 class="fw-bold mb-3"><i class="bi bi-table text-primary me-2"></i> Cuadro Cronológico de Cargos</h4>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Período</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Empresa</th>
+                            <th scope="col">Principales Logros</th>
+                            <th scope="col">Stack Tecnológico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="tarjeta-experiencia-destacada">
+                            <td><span class="badge bg-primary">2023 - Presente</span></td>
+                            <td class="fw-bold">Senior Full Stack Tech Lead</td>
+                            <td>Innovasoft Global</td>
+                            <td>Liderazgo de equipo de 8 desarrolladores, migración de monolito a microservicios reduciendo latencia en 40%.</td>
+                            <td>
+                                <span class="badge bg-secondary">React</span>
+                                <span class="badge bg-secondary">Node.js</span>
+                                <span class="badge bg-secondary">AWS</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge bg-secondary">2021 - 2023</span></td>
+                            <td class="fw-bold">Desarrolladora Web Senior</td>
+                            <td>Banco Digital del Oriente</td>
+                            <td>Diseño e implementación de módulo de transferencias interbancarias y pagos QR en tiempo real con alta concurrencia.</td>
+                            <td>
+                                <span class="badge bg-secondary">TypeScript</span>
+                                <span class="badge bg-secondary">PostgreSQL</span>
+                                <span class="badge bg-secondary">Docker</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge bg-secondary">2019 - 2021</span></td>
+                            <td class="fw-bold">Ingeniera de Software Frontend</td>
+                            <td>Pixel &amp; Code Studio</td>
+                            <td>Construcción de dashboards interactivos y sitios SPA para clientes de comercio electrónico en Latinoamérica.</td>
+                            <td>
+                                <span class="badge bg-secondary">JavaScript</span>
+                                <span class="badge bg-secondary">Bootstrap</span>
+                                <span class="badge bg-secondary">REST APIs</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página Unificado -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Ing. Valeria Sofía Morales Vargas - Proyecto Académico de Investigación DOM</p>
+            <small class="text-muted">Desarrollado con HTML5 semántico, Bootstrap 5, CSS3 personalizado y JavaScript puro (Vanilla DOM).</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (con Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Código JS Propio (Separado para manipulación del DOM) -->
+    <script src="js/main.js"></script>
+</body>
+</html>

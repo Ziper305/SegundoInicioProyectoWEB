@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Ing. Valeria Morales</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos CSS Propios (Separados) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación Unificada -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-code-slash text-primary me-2 fs-4"></i>
+                <span>Valeria Morales <small class="text-muted fs-6 d-none d-sm-inline">| Portfolio</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Datos Personales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="perfil.html">Perfil Profesional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="experiencia.html">Experiencia Laboral</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="formacion.html">Formación Académica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="referencias.html">Referencias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="fw-bold"><i class="bi bi-kanban-fill text-primary me-2"></i> Proyectos Personales y Profesionales</h2>
+                <p class="text-secondary">Soluciones de software desarrolladas con arquitecturas modernas y foco en experiencia de usuario.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 custom-card">
+                    <img src="img/proyecto1.svg" class="card-img-top" alt="Sistema ERP Cloud">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Full Stack</span>
+                            <span class="badge bg-secondary">Cloud</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Sistema ERP Cloud Modular</h5>
+                        <p class="card-text text-muted flex-grow-1">
+                            Plataforma integral para facturación electrónica, control de inventarios y gestión de compras para medianas empresas comerciales.
+                        </p>
+                        <button class="btn btn-outline-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                            <i class="bi bi-eye-fill me-1"></i> Ver Detalles Técnicos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 custom-card">
+                    <img src="img/proyecto2.svg" class="card-img-top" alt="App Móvil Fintech">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-purple text-white" style="background-color: #8b5cf6;">Fintech</span>
+                            <span class="badge bg-success">Microservicios</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Billetera Digital &amp; Pagos QR</h5>
+                        <p class="card-text text-muted flex-grow-1">
+                            Solución financiera con encriptación de extremo a extremo, liquidación instantánea y validación biométrica de usuarios.
+                        </p>
+                        <button class="btn btn-outline-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                            <i class="bi bi-eye-fill me-1"></i> Ver Detalles Técnicos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 custom-card">
+                    <img src="img/proyecto3.svg" class="card-img-top" alt="Portal Telemedicina">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark">Salud</span>
+                            <span class="badge bg-dark">WebRTC</span>
+                        </div>
+                        <h5 class="card-title fw-bold">Portal de Telemedicina Vital</h5>
+                        <p class="card-text text-muted flex-grow-1">
+                            Sistema de videoconsultas médicas en tiempo real, agendamiento sincronizado y recetas médicas digitales con firma electrónica.
+                        </p>
+                        <button class="btn btn-outline-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                            <i class="bi bi-eye-fill me-1"></i> Ver Detalles Técnicos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modales de Bootstrap para Proyecto 1 -->
+        <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalProyecto1Label"><i class="bi bi-cpu-fill me-2"></i>Ficha Técnica: ERP Cloud</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-secondary">
+                        <p><strong>Stack:</strong> React 18, Node.js, Express, PostgreSQL, Redis, Docker, AWS ECS.</p>
+                        <p><strong>Métricas:</strong> Capacidad para procesar más de 120,000 transacciones mensuales con tiempo de respuesta promedio inferior a 150ms.</p>
+                        <p><strong>Funcionalidades clave:</strong> Exportación a Excel/PDF, autenticación 2FA y conexión con servicios tributarios nacionales.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Proyecto 2 -->
+        <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="modalProyecto2Label"><i class="bi bi-wallet2 me-2"></i>Ficha Técnica: Fintech QR</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-secondary">
+                        <p><strong>Stack:</strong> TypeScript, NestJS, MongoDB, Apache Kafka, Kubernetes.</p>
+                        <p><strong>Seguridad:</strong> Tokenización de credenciales bancarias y cumplimiento de normativas de protección de datos financieros.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Proyecto 3 -->
+        <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-dark">
+                        <h5 class="modal-title" id="modalProyecto3Label"><i class="bi bi-hospital me-2"></i>Ficha Técnica: Telemedicina</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-secondary">
+                        <p><strong>Stack:</strong> WebRTC, Socket.io, React, Node.js, TailwindCSS.</p>
+                        <p><strong>Impacto:</strong> Más de 5,000 citas virtuales realizadas con historial clínico unificado y seguro.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página Unificado -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2026 Ing. Valeria Sofía Morales Vargas - Proyecto Académico de Investigación DOM</p>
+            <small class="text-muted">Desarrollado con HTML5 semántico, Bootstrap 5, CSS3 personalizado y JavaScript puro (Vanilla DOM).</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (con Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Código JS Propio (Separado para manipulación del DOM) -->
+    <script src="js/main.js"></script>
+</body>
+</html>

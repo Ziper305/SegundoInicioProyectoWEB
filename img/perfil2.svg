@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="url(#grad2)"/>
+  <circle cx="200" cy="150" r="70" fill="#ecfdf5"/>
+  <path d="M100 340 C100 240, 300 240, 300 340 Z" fill="#ecfdf5"/>
+  <circle cx="200" cy="140" r="45" fill="#10b981"/>
+  <path d="M140 330 C140 260, 260 260, 260 330 Z" fill="#065f46"/>
+  <text x="200" y="375" font-family="Arial, sans-serif" font-size="16" fill="#a7f3d0" text-anchor="middle" font-weight="bold">FOTO PROFESIONAL 2 (MODO TECH)</text>
+</svg>
